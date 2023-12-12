@@ -2,7 +2,7 @@
 
 class Veiculo(object):
     # Método construtor
-    def __int__(self, marca, modelo, cor, velocidade):
+    def __init__(self, marca, modelo, cor, velocidade):
         self.marca = marca
         self.modelo = modelo
         self.cor = cor
@@ -39,6 +39,4 @@ class Veiculo(object):
             '\n Marca: ' + str(self.getMarca()) +
             '\n Modelo: ' + str(self.getModelo()) +
             '\n Cor: ' + str(self.getCor()) +
-            '\n Velocidade: ' + str(self.getVelocidade() * 'km/h')
-        )
-
+            '\n Velocidade: ' + str(self.getVelocidade()) + ' km/h')
