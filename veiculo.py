@@ -39,4 +39,9 @@ class Veiculo(object):
             '\n Marca: ' + str(self.getMarca()) +
             '\n Modelo: ' + str(self.getModelo()) +
             '\n Cor: ' + str(self.getCor()) +
-            '\n Velocidade: ' + str(self.getVelocidade()) + ' km/h')
+            '\n Velocidade: ' + str(self.getVelocidade()) + 'km/h')
+
+    # Método acelerar
+    def acelerar(self):
+        if self.velocidade < 120:
+            self.velocidade += 1
